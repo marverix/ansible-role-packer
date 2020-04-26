@@ -1,8 +1,8 @@
 # Ansible Role: Packer
 
 [![Build Status](https://travis-ci.com/marverix/ansible-role-packer.svg?branch=master)](https://travis-ci.com/marverix/ansible-role-packer)
-![Ansible Quality Score](https://img.shields.io/ansible/quality/48205)
-![Ansible Role](https://img.shields.io/ansible/role/48205)
+![Ansible Quality Score](https://img.shields.io/ansible/quality/48226)
+![Ansible Role](https://img.shields.io/ansible/role/48226)
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](LICENSE)
 
 Ansible role that installs Packer on Linux.
