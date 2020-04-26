@@ -1,0 +1,29 @@
+---
+- name: Check if Packer is already installed
+  command: "packer --version"
+  register: test
+  ignore_errors: yes
+  failed_when: no
+  changed_when: yes
+
+- name: Installation block
+  when: test.msg is defined or
+    not (test.stdout | regex_search('^Packer ' + packer_version | string))
+  block:
+
+    - name: Download the package
+      get_url:
+        url: "https://releases.hashicorp.com/packer/{{ packer_version }}/packer_{{ packer_version }}_linux_amd64.zip"
+        dest: "{{ packer_zip_tmp }}"
+        checksum: "sha256:{{ packer_package_checksum }}"
+
+    - name: Double-check unzip is present
+      package:
+        name: unzip
+        state: present
+
+    - name: Unarchive
+      unarchive:
+        src: "{{ packer_zip_tmp }}"
+        remote_src: yes
+        dest: /usr/local/bin

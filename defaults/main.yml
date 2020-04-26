@@ -1,0 +1,8 @@
+---
+# List of available versions is here:
+# https://releases.hashicorp.com/packer/
+packer_version: 1.5.5
+
+# You can checksums here:
+# https://releases.hashicorp.com/packer/1.5.5/packer_1.5.5_SHA256SUMS
+packer_package_checksum: 07f28a1a033f4bcd378a109ec1df6742ac604e7b122d0316d2cddb3c2f6c24d1

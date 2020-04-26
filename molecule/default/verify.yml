@@ -1,0 +1,12 @@
+---
+- name: Verify
+  hosts: all
+  tasks:
+
+  - name: Check Packer version
+    command: "packer version"
+    register: test
+
+  - name: Assert result
+    assert:
+      that: "'Packer v' in test.stdout"
