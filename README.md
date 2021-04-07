@@ -19,6 +19,7 @@ Ansible role that installs Packer on Linux.
 
 - ✔️ Ubuntu 16.04 (Xenial)
 - ✔️ Ubuntu 18.04 (Bionic)
+- ✔️ Ubuntu 20.04 (Focal)
 - ✔️ CentOS 7
 
 ## Requirements
@@ -29,8 +30,8 @@ None
 
 Variable | Description | Default Value
 --- | --- | ---
-`packer_version` | Version of Packer to be installed | `1.5.5`
-`packer_package_checksum` | SHA256 checksums for packages | *checksum for 1.5.5 version*
+`packer_version` | Version of Packer to be installed | `1.7.2`
+`packer_package_checksum` | SHA256 checksums for packages | *checksum for 1.7.2 version*
 
 ## Dependencies
 
