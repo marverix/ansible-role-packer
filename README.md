@@ -12,7 +12,6 @@ Ansible role that installs Packer on Linux.
 - ✔️ Installing Packer
   - Does the package's checksum check
   - You can define which version should be installed
-  - Skips if requested version is already installed
 - ✔️ Tested with Molecule Verify
 
 ## Supported Platforms
